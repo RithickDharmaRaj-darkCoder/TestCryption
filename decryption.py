@@ -1,7 +1,11 @@
 from encryption import *
 
 encrypted = encrypt()               # Calling the UserDefined Function...
-print(f"Encrypted Message :"+encrypted)
+if len(encrypted) >4:
+    print(f"Encrypted Message :"+encrypted[4])
+else:
+    print("Encrypted Message : Mr_17 ")
+
 #Decryption Section...
 def decrypt(encrypted): #Creating a User  as def decrypt()...
     decrypted = " "
